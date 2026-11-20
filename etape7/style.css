@@ -1,0 +1,134 @@
+/* Conteneur */
+#table_container {
+    font-family: Calibri, Arial, sans-serif;
+    width: 80%;
+    margin: 40px auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* En-tête bleu */
+th {
+    background: #007bbd;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Largeurs des colonnes étroites  */
+th:nth-child(1) { width: 60px; }
+th:nth-child(4) { width: 80px; }
+th:nth-child(5) { width: 80px; }
+
+/* Cellules */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Classes des colonnes */
+.col_number,
+.col_chkbox {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+
+/* Étape 4  */
+#container_summary {
+    display: flex;
+    justify-content: space-between;   /* nb de lignes à gauche, total à droite */
+    align-items: center;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+#container_summary p {
+    margin: 0;
+    padding: 10px;
+}
+
+#p2 {
+    flex: 1;   /* paragraphe vide qui pousse le total vers la droite */
+}
+
+/*Étape 5  */
+#form_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Barre de recherche (Feature 2) */
+#search_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.form_label {
+    font-weight: bold;
+}
+
+.form_field {
+    flex: 1;
+    padding: 4px;
+    border: 1px solid #888;
+}
+
+/*  Étape 6  */
+#container_btn {
+    display: flex;
+    justify-content: flex-end;   /* boutons alignés à droite */
+    gap: 8px;
+    padding: 15px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.btn-add,
+.btn-edit,
+.btn-del,
+.btn-consol {
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.btn-add    { background: #00b300; }   /* vert */
+.btn-edit   { background: #007bbd; }   /* bleu */
+.btn-del    { background: #ff0000; }   /* rouge */
+.btn-consol { background: #bf8f00; }   /* ocre */
